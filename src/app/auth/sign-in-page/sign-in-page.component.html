@@ -1,0 +1,23 @@
+<div class="main-wrapper">
+  <div class="container">
+    <div class="login-panel">
+      <h2 class="title">Existing Customers</h2>
+        <form>
+          <label>Email address</label>
+          <input [uiInput] name="email" [(ngModel)]="email">
+          <label>Password</label>
+          <input type="password" [uiInput] name="password" [(ngModel)]="password">
+        </form>
+
+        <div class="login-box">
+          <button class="login" (click)=checkLogin()>Sign In</button>
+        </div>
+    </div>
+    <div class="login-panel">
+      <h2 class="title">New to VAPH?</h2>
+      <div class="login-box">
+        <button class="login" routerLink="../sign-up">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
